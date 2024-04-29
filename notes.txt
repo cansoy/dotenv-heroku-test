@@ -1,0 +1,51 @@
+start from here:
+    const dotenv=require("dotenv").config({path:"./.env"})
+
+    you can create a project inside of an organization and then open with --@latest-- command
+    Connect to this project env vault. vlt_fcxcxd639c34064aasasdfb1asdasd8a7f
+    npx dotenv-vault@latest new vlt_fcd3234234639c34064af234234asdasdb18a7fd0
+OR 
+    ########################################## DEVELOPMENT
+    use command/command line 
+    npx dotenv-vault@latest new
+    npx dotenv-vault@latest login 
+    DO LOGIN OPENED WEB PAGE
+    npx dotenv-vault@latest open
+    npx dotenv-vault@latest pull
+    // do some key value pairs for development and then
+    npx dotenv-vault@latest push
+
+    /!!!!!!!!!!!!!!!!!!!!.env.production!!!!!!!!!!!!!!!!!!!!!!!/
+    $ npx dotenv-vault@latest push production
+    $ npx dotenv-vault@latest pull production
+    ########################################## PRODUCTION
+    code .env.production #production
+    npx dotenv-vault@latest open production
+    npx dotenv-vault@latest login
+    npx dotenv-vault@latest pull production
+    //update you key value pairs in .env.production file
+    // do some key value pairs for development and then
+    npx dotenv-vault@lates push production
+
+    /!!!!!!!!!!!!!!!!!!!!.env.production!!!!!!!!!!!!!!!!!!!!!!!/
+    $ npx dotenv-vault@latest push production
+    $ npx dotenv-vault@latest pull production
+
+FOR DEPLOYMENT OF HEROKU
+    npx dotenv-vault@latest keys =>> gets all keys
+    npx dotenv-vault@latest keys production =>> gets just production keys
+    use a key #DOTENV_KEY# at heroku
+    DOTENV_KEY=dotenv://:key_sdfuhwufn93487fnjk238423öfwknfwlefsdasqd@dotenv.org/vault/.env.vault?environment=production
+
+    ########################################## .gitignore
+    automatically those files will be arranged !!!
+    1-BE CAREFUL ABOUT ==>>>.env
+    2-BE CAREFUL ABOUT ==>>>.env.production
+    3-BE CAREFUL ABOUT ==>>>.env.me
+    
+    .env*
+    .flaskenv*
+    !.env.project
+    !.env.vault
+
+
